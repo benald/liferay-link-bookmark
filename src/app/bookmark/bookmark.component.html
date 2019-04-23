@@ -1,0 +1,25 @@
+<button id="bookmark-btn" class="btn btn-link btn-bookmark" name="Bookmark" type="button" (click)="toggleBookmark(linkUUid)">
+  <ng-container *ngIf="!isBookmarked">
+    <svg class="bm-icon bm-icon-bookmark-outline" focusable="false" role="presentation">
+      <use attr.xlink:href="{{ASSETURL + '/icons.svg#bookmark-outline' }}" />
+    </svg>
+    <span class="bookmark-text" style="vertical-align: middle;">Add My Link <br /> {{ title }}</span>
+  </ng-container>
+  <ng-container *ngIf="isBookmarked">
+    <svg class="bm-icon bm-icon-bookmark-solid" focusable="false" role="presentation">
+      <use attr.xlink:href="{{ASSETURL + '/icons.svg#bookmark-solid' }}" />
+    </svg>
+    <span class="bookmark-text" style="vertical-align: middle;">Remove My Link</span>
+  </ng-container>
+</button>
+<br>
+<ul class="list-unstyled">
+  <li>Bookmarked? {{ isBookmarked }}</li>
+  <li>{{ linkUUid | json }}</li>
+  <li>{{ url | json }}</li>
+  <li>{{ title | json }}</li>
+</ul>
+
+
+
+

@@ -1,0 +1,87 @@
+.modal {
+  font-family: $font-family-base;
+}
+.bm-modal-header {
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+
+    .modal-title {
+        font-weight: 700;
+        color: $dark;
+    }
+}
+
+.close-modal {
+    float: right;
+    background: transparent;
+    border-color: transparent;
+    .bm-icon-navigation-close {
+        height: 20px;
+        width: 20px;
+        fill: $secondary;
+    }
+}
+
+.bm-modal-body {
+
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+  a {
+
+    color: $primary;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+        color: darken($primary, 4%);
+        text-decoration: underline;
+    }
+  }
+}
+
+.bm-modal-footer {
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+
+    .btn-default {
+        background:     transparent;
+        border-color:   transparent;
+        color:          $primary;
+        font-size:      0.875rem;
+        font-weight:    600;
+        text-transform: uppercase;
+    }
+
+    .btn-secondary {
+        background:     $form-btn-bg;
+        border-color:   $form-btn-bg;
+        color:          $white;
+        font-size:      0.875rem;
+        font-weight:    600;
+        text-transform: uppercase;
+    }
+}

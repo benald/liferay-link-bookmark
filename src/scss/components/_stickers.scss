@@ -1,0 +1,202 @@
+
+/* Stickers
+****************************************************/
+
+.bm-sticker {
+  align-items: center;
+  border-radius: 0.25rem;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2rem;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  vertical-align: middle; }
+  .bm-sticker .bm-icon {
+    display: block;
+    height: 100%;
+    margin: auto; }
+  .bm-sticker > .bm-inline-item .bm-icon {
+    margin-top: 0; }
+  .bm-sticker.rounded .bm-sticker-overlay {
+    border-radius: 0.25rem; }
+  .bm-sticker.rounded-circle .bm-sticker-overlay {
+    border-radius: 5000px; }
+  .bm-sticker.rounded-0 .bm-sticker-overlay {
+    border-radius: 0; }
+
+.bm-sticker-overlay {
+  align-items: center;
+  border-radius: 0.25rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.bm-sticker-bottom-left {
+  bottom: 1rem;
+  left: 1rem;
+  position: absolute;
+  right: auto;
+  top: auto; }
+
+.bm-sticker-bottom-right {
+  bottom: 1rem;
+  left: auto;
+  position: absolute;
+  right: 1rem;
+  top: auto; }
+
+.bm-sticker-top-left {
+  left: 1rem;
+  position: absolute;
+  top: 1rem; }
+
+.bm-sticker-top-right {
+  left: auto;
+  position: absolute;
+  right: 1rem;
+  top: 1rem; }
+
+.bm-sticker-outside {
+  left: -1rem;
+  top: -1rem; }
+  .bm-sticker-outside.bm-sticker-bottom-left {
+    bottom: -1rem;
+    top: auto; }
+  .bm-sticker-outside.bm-sticker-bottom-right {
+    bottom: -1rem;
+    left: auto;
+    right: -1rem;
+    top: auto; }
+  .bm-sticker-outside.bm-sticker-top-right {
+    left: auto;
+    right: -1rem; }
+
+.bm-sticker-user-icon {
+  background-color: #FFF;
+  border-radius: 5000px;
+  box-shadow: 0 0 0 1px #E7E7ED; }
+  .bm-sticker-user-icon .bm-sticker-overlay {
+    border-radius: 5000px; }
+
+.bm-sticker-sm {
+  font-size: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  width: 1.5rem; }
+  .bm-sticker-sm.bm-sticker-outside {
+    left: -0.75rem;
+    top: -0.75rem; }
+    .bm-sticker-sm.bm-sticker-outside.bm-sticker-bottom-left {
+      bottom: -0.75rem;
+      top: auto; }
+    .bm-sticker-sm.bm-sticker-outside.bm-sticker-bottom-right {
+      bottom: -0.75rem;
+      left: auto;
+      right: -0.75rem;
+      top: auto; }
+    .bm-sticker-sm.bm-sticker-outside.bm-sticker-top-right {
+      left: auto;
+      right: -0.75rem; }
+
+.bm-sticker-lg {
+  font-size: 1.25rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem; }
+  .bm-sticker-lg.bm-sticker-outside {
+    left: -1.25rem;
+    top: -1.25rem; }
+    .bm-sticker-lg.bm-sticker-outside.bm-sticker-bottom-left {
+      bottom: -1.25rem;
+      top: auto; }
+    .bm-sticker-lg.bm-sticker-outside.bm-sticker-bottom-right {
+      bottom: -1.25rem;
+      left: auto;
+      right: -1.25rem;
+      top: auto; }
+    .bm-sticker-lg.bm-sticker-outside.bm-sticker-top-right {
+      left: auto;
+      right: -1.25rem; }
+
+.bm-sticker-xl {
+  font-size: 1.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  width: 3rem; }
+  .bm-sticker-xl.bm-sticker-outside {
+    left: -1.5rem;
+    top: -1.5rem; }
+    .bm-sticker-xl.bm-sticker-outside.bm-sticker-bottom-left {
+      bottom: -1.5rem;
+      top: auto; }
+    .bm-sticker-xl.bm-sticker-outside.bm-sticker-bottom-right {
+      bottom: -1.5rem;
+      left: auto;
+      right: -1.5rem;
+      top: auto; }
+    .bm-sticker-xl.bm-sticker-outside.bm-sticker-top-right {
+      left: auto;
+      right: -1.5rem; }
+
+.bm-sticker-primary {
+  background-color: #FFF;
+  color: #0B5FFF; }
+
+.bm-sticker-secondary {
+  background-color: #FFF;
+  color: #6B6C7E; }
+
+.bm-sticker-success {
+  background-color: #FFF;
+  color: #287D3D; }
+
+.bm-sticker-info {
+  background-color: #FFF;
+  color: #2E5AAC; }
+
+.bm-sticker-warning {
+  background-color: #FFF;
+  color: #B95000; }
+
+.bm-sticker-danger {
+  background-color: #FFF;
+  color: #DA1414; }
+
+.bm-sticker-light {
+  background-color: #FFF;
+  color: #272833; }
+
+.bm-sticker-dark {
+  background-color: #272833;
+  color: #FFF; }
+
+.bm-sticker-circle,
+.bm-sticker-circle .bm-sticker-overlay {
+  border-radius: 5000px; }
+
+.bm-sticker > .bm-inline-item {
+  font-size: 1rem;
+}
+
+.bm-inline-item {
+  align-items: center;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.bm-inline-item .bm-inline-item {
+  display: inline;
+}
+
+.bm-inline-item .bm-icon {
+  margin-top: -.21429em;
+}

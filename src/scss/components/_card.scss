@@ -1,0 +1,93 @@
+.bm-card {
+
+  box-shadow: none;
+  margin-bottom: 20px;
+
+  .bm-card-header {
+    background: #5e5e5e;
+    border: none;
+    border-radius: 3px 3px 0 0;
+    padding: 15px 10px 15px 20px ;
+    z-index: 999;
+    color: $white;
+
+    .bm-section {
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .bm-card-body {
+    
+    position: relative;
+    padding: 15px 10px;
+
+    .bm-info-panel {
+
+      z-index: 888;
+
+      .bm-info-panel-icon {
+
+        max-width: 100%;
+        padding: 10px 0;
+        margin: 0 auto;
+      
+      }
+      
+      // Info Panel Add link item btn
+      .bm-info-panel-content {
+      
+        position: relative;
+        text-align: center;
+        max-width: 100%;
+        padding: 10px;
+           
+        #addLink {
+      
+          @include media-breakpoint-up(sm) {
+            position: absolute;
+            bottom: 10px;
+          }
+      
+          &.btn-link {
+            text-decoration: underline;
+          }
+      
+        }
+       
+      }
+    }
+
+    .btn-close {
+      position: absolute;
+      right: 10px;
+      z-index: 999;
+    }
+
+    .bm-card-info {
+
+      h3 {
+        margin: 5px 0 5px 0;
+      }
+      p {
+        margin: 0 0 10px 0;
+      }
+    }
+    
+  }
+
+  .bm-list-group {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bm-card-footer {
+    background: transparent;
+    border-bottom: 1px dotted #d7d7d7;
+    padding: 1px;
+    height: 44px;
+  }
+
+}
+

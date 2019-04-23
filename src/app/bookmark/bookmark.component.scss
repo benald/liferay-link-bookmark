@@ -1,0 +1,47 @@
+@import "../../scss/bootstrap-variables";
+
+#bookmark-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 15px 12px;
+    color: $primary;
+    width: 165px;
+    // height: 60px;
+}
+.bookmark-icon {
+    float: left;
+    
+}
+.bookmark-text {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+}
+
+.bm-icon {
+
+    padding: 0px;
+    margin-top: 0px;
+    pointer-events: none;
+    vertical-align: middle;
+    float: left;
+    fill: #007B84;
+
+    &:hover {
+        fill: #007B84;
+    }
+  
+    &.bm-icon-bookmark-outline,
+    &.bm-icon-bookmark-solid {
+      height: 24px;
+      width: 24px;
+      fill: #007B84;
+    }
+  
+  }

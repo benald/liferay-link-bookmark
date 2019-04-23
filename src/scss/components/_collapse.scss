@@ -1,0 +1,14 @@
+.collapse {
+
+  &.in {
+
+    @include fadeIn(
+      $duration: 250ms,
+      $delay: 0ms,
+      $function: ease-in,
+      $fill: both
+    );
+
+  }
+  
+}

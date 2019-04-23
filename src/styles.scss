@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// @import "../node_modules/animatewithsass/animate.scss";
+
+@import "./scss/bootstrap-variables";
+
+.my-links {
+
+  /* REQUIRED */
+  @import "../node_modules/bootstrap/scss/functions";
+  @import "../node_modules/bootstrap/scss/variables";
+  @import "../node_modules/bootstrap/scss/mixins";
+
+  /* OPTIONAL */
+  @import "../node_modules/bootstrap/scss/buttons";
+  @import "../node_modules/bootstrap/scss/transitions";
+
+  @import "../node_modules/bootstrap/scss/toasts";
+
+  // @import "./scss/components/btn";
+  // @import "./scss/components/toast";
+
+}

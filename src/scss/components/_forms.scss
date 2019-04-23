@@ -1,0 +1,90 @@
+#linkCreateForm,
+#linkEditForm {
+
+  .invisible {
+    height: 0;
+  }
+
+  input[type=text] {
+
+    border-color: $input-border-color;
+    
+    &:focus {
+      border-color: $primary;
+    }
+    
+  }
+
+}
+
+
+.bm-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $secondary;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+// Validation 
+.ng-pristine.ng-invalid:not(form)  {
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0);
+  @include fadeIn(
+    $duration: 500ms,
+    $delay: 100ms,
+    $function: ease-in-out,
+    $fill: both
+  );
+}
+
+.ng-dirty.ng-valid:not(form)  {
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0);
+  @include fadeIn(
+    $duration: 500ms,
+    $delay: 100ms,
+    $function: ease-in-out,
+    $fill: both
+  );
+}
+
+.ng-dirty.ng-invalid:not(form)   {
+  border: 1px solid $danger !important;
+  box-shadow: 0 0 0 0.2rem rgba($danger, 0);
+  @include shake(
+    $duration: 500ms,
+    $delay: 0,
+    $function: linear,
+    $fill: both
+  );
+}
+
+// Shake animation Override
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

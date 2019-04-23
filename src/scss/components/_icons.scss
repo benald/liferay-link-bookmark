@@ -1,0 +1,26 @@
+/* Icons
+****************************************************/
+
+.bm-icon {
+
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  fill: #B0B0B0;
+  padding:3px 5px;
+  margin-top: 0px;
+  pointer-events: none;
+  vertical-align: middle;
+
+  &:hover {
+    fill: #505050;
+  }
+
+  &.bm-icon-bookmark-outline,
+  &.bm-icon-bookmark-solid {
+    height: 24px;
+    width: 24px;
+    fill: #505050;
+  }
+
+}

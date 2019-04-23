@@ -1,0 +1,157 @@
+/* My Links Layout Classes
+****************************************************/
+.dev {
+
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+.my-links, .ml {
+
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bm-float {
+
+  flex-wrap: wrap;
+}
+
+.bm-padded-no-gutters-x {
+
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+  width: auto;
+}
+
+.bm-row {
+
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center !important;
+}
+
+.bm-col {
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 0;
+  position: relative;
+
+  a > i {
+    padding: 3px 5px;
+  }
+
+}
+
+.bm-col-expand {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 3.125rem;
+  word-wrap: break-word;
+}
+
+.bm-float > .bm-col {
+
+  max-width: 100%;
+}
+
+.bm-padded-no-gutters-x > .bm-col {
+
+  padding: .25rem .5rem;
+}
+
+.bm-row-center > .bm-col {
+
+  justify-content: center;
+}
+
+.bm-section,
+.bm-section-title {
+
+  max-width: 100%;
+  font-family: inherit;
+
+  a {
+    color: $primary;
+    font-size: 0.875rem;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($primary, 4%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.bm-section-title {
+  // padding-left:   15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  color: $white;
+  // letter-spacing: 1.5px;
+}
+
+.bm-info-heading {
+  font-size: 16px;
+}
+.bm-info-text {
+  font-size: 14px;
+}
+
+.bm-info-circle {
+
+  border-radius: 50px;
+  border: 1px solid #B0B0B0;
+  color: $white;
+  font-size: 20px;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+}
+
+.bm-add-item {
+
+  background-color: $white;
+  background: #F3F3F3 !important;
+  border-radius: 3px;
+  border: 0;
+  border: 1px dashed #D7D7D7;
+  line-height: 1.429;
+  margin: 2px 0 2px 0;
+  padding: 0;
+  position: relative;
+  text-align: -webkit-match-parent;
+  text-align: center;
+
+  .btn-link {
+
+      &:hover {
+          text-decoration: underline;
+      }
+      span {
+        text-decoration: none;
+        margin-top: 3px;
+        font-size: 13px;
+        color: $primary;
+      }
+  }
+
+  .bm-footnote__item {
+    
+    display: none;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -.5em;
+  }
+}

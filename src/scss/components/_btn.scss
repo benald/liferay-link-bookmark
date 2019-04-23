@@ -1,0 +1,95 @@
+.btn-bookmark {
+  border-radius: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid $header-icon-color;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  @include hover {
+    color: darken($white, 2%);
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: 0.65;
+    @include box-shadow(none);
+  }
+}
+
+// // Card Header Icons
+// .btn-info,
+// .btn-cog {
+
+//   background: transparent;
+//   outline: 0;
+//   border: none;
+//   box-shadow: none;
+
+//   svg {
+//     fill: $header-icon-color;
+//   }
+
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     background: transparent;
+//     outline: 0;
+//     border: none;
+
+//     svg {
+//       fill: $white;
+//     }
+//   }
+// }
+
+// Link Item Icons
+.btn-close   {
+
+  background: transparent;
+  outline: 0;
+  border: none;
+
+  svg {
+    fill: $link-icon-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    outline: 0;
+    border: none;
+
+    svg {
+      fill: $link-icon-active-color;
+    }
+  }
+}
+
+// .btn-arrow {
+//   padding: 3px 9px;
+// }
+
+// .btn-icon-info {
+//   position: absolute;
+//   bottom: 5px;
+//   left: 10px;
+// }
+
+
