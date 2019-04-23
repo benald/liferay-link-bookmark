@@ -10,10 +10,10 @@ import { Link } from '../shared/link';
 
 export class BookmarkComponent implements OnInit {
 
-  @Input() linkUUid: String; url: String; title: String;
+  @Input() linkUUid: string; url: string; title: string;
 
-  Link: any = [];
-  isBookmarked: any;
+  link: Link;
+  isBookmarked: boolean = false;
   bookmarkDetails: {}; 
 
   constructor(
@@ -31,7 +31,8 @@ export class BookmarkComponent implements OnInit {
     console.log(this.title);
     console.log(this.url);
     this.checkUUid(this.linkUUid);
-    console.log(this.Link);
+    console.log(this.link);
+
   }
 
 
@@ -40,7 +41,10 @@ export class BookmarkComponent implements OnInit {
     
     return this.restApi.getBookmark(linkUUid).subscribe((data: {}) => {
      // this.bookmarkDetails = data;
-      this.Link = data;
+     if (data && data instanceof Array && data.length > 0) {
+      this.link = data[0];
+      this.isBookmarked = true;
+    }
     });    
 
     // if(this.bookmarkDetails.length > 0) {
@@ -66,9 +70,14 @@ export class BookmarkComponent implements OnInit {
   // Toggle Bookmark
   toggleBookmark(id) {
     if(this.isBookmarked = !this.isBookmarked) {
-      this.restApi.createBookmark(this.Link).subscribe((data: {}) => {});
+      let newLink: Link;
+      newLink = new Link();
+      newLink.linkUUid = this.linkUUid;
+      newLink.linkType = "Ikon";
+
+      this.restApi.createBookmark(newLink).subscribe((data: {}) => {});
     } else {
-      this.restApi.deleteBookmark(this.Link.id).subscribe(data => {});
+      this.restApi.deleteBookmark(this.link.id).subscribe(data => {});
     }
   }
 

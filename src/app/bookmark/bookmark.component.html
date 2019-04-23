@@ -1,4 +1,4 @@
-<button id="bookmark-btn" class="btn btn-link btn-bookmark" name="Bookmark" type="button" (click)="toggleBookmark(linkUUid)">
+<button id="bookmark-btn" class="btn btn-link btn-bookmark" name="Bookmark" type="button" (click)="toggleBookmark(id)">
   <ng-container *ngIf="!isBookmarked">
     <svg class="bm-icon bm-icon-bookmark-outline" focusable="false" role="presentation">
       <use attr.xlink:href="{{ASSETURL + '/icons.svg#bookmark-outline' }}" />
